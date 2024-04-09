@@ -4,9 +4,8 @@ import subprocess
 
 subprocess.call('clear', shell=True)  # Dla systemów Unixowych
 
-WIDTH = 10
-HEIGHT = 10
-
+WIDTH = 100
+HEIGHT = 45
 # Utworzenie listy list przedstawiajacej komórki
 nextCells = []
 for x in range(WIDTH):
@@ -76,8 +75,8 @@ while True: # Pętla główna programu
     if currentCells == nextCells:
         break
 
-    if licznik == 200:
+    if licznik == 100:
         break
 
-    time.sleep(0.2) # Dodanie sekundowej przerwy, aby zminimalizować migotanie
+    time.sleep(0.05) # Dodanie sekundowej przerwy, aby zminimalizować migotanie
     subprocess.call('clear', shell=True)  # Dla systemów Unixowych
